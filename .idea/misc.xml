@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Professional/Documents/GitHub/Cipo.app-master/app/src/main/res/drawable/corners.xml" value="0.2405" />
+        <entry key="..\:/Users/Professional/Documents/GitHub/Cipo.app-master/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Professional/Documents/GitHub/Cipo.app-master/app/src/main/res/layout/activity_main2.xml" value="0.25" />
+        <entry key="..\:/Users/Professional/Documents/GitHub/Cipo.app-master/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/Users/Professional/Documents/app_projects/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.162" />
+        <entry key="..\:/Users/Professional/Documents/app_projects/app/src/main/res/drawable/file.xml" value="0.2555" />
+        <entry key="..\:/Users/Professional/Documents/app_projects/app/src/main/res/drawable/ic_launcher_background.xml" value="0.223" />
+        <entry key="..\:/Users/Professional/Documents/app_projects/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Professional/Documents/app_projects/app/src/main/res/layout/activity_main2.xml" value="0.25" />
+        <entry key="..\:/Users/Professional/Documents/app_projects/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.223" />
+        <entry key="..\:/Users/Professional/Documents/app_projects/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.223" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.133" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/drawable/corners.xml" value="0.173" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/drawable/file.xml" value="0.133" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/drawable/ic_baseline_font_download_24.xml" value="0.133" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/drawable/ic_launcher_background.xml" value="0.133" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/drawable/iconfirst.xml" value="0.133" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/layout/activity_main.xml" value="0.136" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/layout/activity_main2.xml" value="0.25" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/layout/fragment_story.xml" value="0.4" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/layout/fragment_story_frag.xml" value="0.25" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/layout/reee.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Professional/Downloads/Cipo.app-master/Cipo.app-master/app/src/main/res/menu/boottoo.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

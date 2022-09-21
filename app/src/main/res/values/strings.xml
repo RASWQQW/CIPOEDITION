@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cipo</string>
+    <string name="set_you_image">Set you image</string>
+    <string name="copy">Copy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
