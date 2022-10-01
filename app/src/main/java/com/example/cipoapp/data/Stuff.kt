@@ -1,4 +1,4 @@
-package com.example.cipoapp
+package com.example.cipoapp.data
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -17,5 +17,5 @@ data class Stuff (
     var links: String,
 
     @ColumnInfo(name = "date")
-    var date : Date,
+    var date : String,
         )

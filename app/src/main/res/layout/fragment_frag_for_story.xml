@@ -5,29 +5,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2B2B2B"
-    tools:context=".fragForStory">
+    tools:context=".FragForStory">
 
 
     <LinearLayout
-        android:layout_width="381dp"
-        android:layout_height="471dp"
+        android:layout_width="wrap_content"
+        android:layout_height="449dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="131dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="8dp"
         android:background="#252525"
-        android:orientation="horizontal" />
+        android:orientation="horizontal"
+        android:visibility="visible" />
 
     <LinearLayout
         android:layout_width="319dp"
         android:layout_height="76dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="283dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="271dp"
         android:background="@drawable/corner_around"
         android:orientation="vertical" />
+
+    <Button
+        android:id="@+id/copyButton2"
+        android:layout_width="48dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="295dp"
+        android:layout_marginTop="281dp"
+        android:contentDescription="@string/app_name"
+        android:isScrollContainer="false"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:visibility="visible"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/copy_icon"
+        app:iconGravity="textTop"
+        app:iconPadding="0dp"
+        app:iconSize="15dp"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343"
+        app:rippleColor="#000000" />
+
+    <TextView
+        android:autoLink="all"
+        android:id="@+id/eeee3"
+        android:layout_width="235dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="286dp"
+        android:cursorVisible="false"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="..."
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.207" />
 
     <TextView
         android:id="@+id/mainLable2"
@@ -49,30 +106,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.207" />
 
-    <TextView
-        android:id="@+id/eeee3"
-        android:layout_width="235dp"
-        android:layout_height="45dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="298dp"
-        android:cursorVisible="false"
-        android:fontFamily="sans-serif-light"
-        android:gravity="center"
-        android:text="..."
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.207" />
-
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="wrap_content"
@@ -80,9 +113,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="49dp"
+        android:layout_marginStart="42dp"
         android:layout_marginTop="2dp"
-        android:layout_marginBottom="250dp"
+        android:layout_marginBottom="272dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
@@ -105,8 +138,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="507dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="508dp"
         android:text="Capital"
         android:textColor="#FFFFFF"
         android:visibility="visible"
@@ -123,8 +156,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="521dp"
         android:src="@drawable/ic_baseline_font_download_24" />
 
     <TextView
@@ -133,8 +166,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="77dp"
-        android:layout_marginEnd="147dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="161dp"
         android:gravity="center"
         android:text="Cipo"
         android:textColor="#FFFFFF"
@@ -147,8 +181,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="70dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.917"
@@ -157,41 +191,13 @@
         app:srcCompat="@drawable/logoin" />
 
     <Button
-        android:id="@+id/copyButton2"
-        android:layout_width="48dp"
-        android:layout_height="55dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="302dp"
-        android:layout_marginTop="293dp"
-        android:contentDescription="@string/app_name"
-        android:isScrollContainer="false"
-        android:textColor="#000000"
-        android:textColorHighlight="#000000"
-        android:textColorLink="#000000"
-        android:visibility="visible"
-        app:cornerRadius="10dp"
-        app:icon="@drawable/copy_icon"
-        app:iconGravity="textTop"
-        app:iconPadding="0dp"
-        app:iconSize="15dp"
-        app:iconTint="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.343"
-        app:rippleColor="#000000" />
-
-    <Button
         android:id="@+id/setButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="277dp"
-        android:layout_marginTop="435dp"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="409dp"
         android:contentDescription="@string/app_name"
         android:isScrollContainer="false"
         android:text="short"
@@ -211,6 +217,18 @@
         app:layout_constraintVertical_bias="0.343"
         app:rippleColor="#000000" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="368dp"
+        android:src="@drawable/amountic"
+        android:visibility="invisible" />
+
     <TextView
         android:id="@+id/crew3"
         android:layout_width="38dp"
@@ -218,8 +236,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="375dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="367dp"
         android:gravity="center"
         android:shadowDx="15"
         android:shadowDy="15"
@@ -229,7 +247,7 @@
         android:textColorHighlight="@color/white"
         android:textColorHint="#FFFFFF"
         android:textSize="15sp"
-        android:visibility="gone"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.443"
@@ -237,16 +255,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.416" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="27dp"
-        android:layout_height="27dp"
+    <TextView
+        android:id="@+id/errorViewText"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="375.4dp"
-        android:src="@drawable/amountic"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="237dp"
+        android:text="TextView"
+        android:textColor="#BA1717"
         android:visibility="gone" />
 
 

@@ -4,4 +4,9 @@
     <string name="copy">Copy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="story">Story</string>
+    <string name="date">Date</string>
+    <string name="id">Id</string>
+    <string name="links">Links</string>
+
 </resources>

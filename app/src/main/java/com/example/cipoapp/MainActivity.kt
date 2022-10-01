@@ -1,18 +1,13 @@
 package com.example.cipoapp
 
 import android.content.ClipData
-import android.content.ClipboardManager
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import androidx.fragment.app.FragmentTransaction
 import com.example.cipoapp.databinding.ActivityMainBinding
-import com.example.cipoapp.SendShortUrl
-import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     val clipped: ClipData? = null
 
     private lateinit var mainFrags : homeFrag
-    private lateinit var storyFrags : fragForStory
+    private lateinit var storyFrags : FragForStory
 
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -39,9 +34,8 @@ class MainActivity : AppCompatActivity() {
         bindingClass.bgNew34.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.itemfirst -> {
-                    Toast.makeText(this, "2San", Toast.LENGTH_SHORT).show()
+//                    Toast.makeText(this, "2San", Toast.LENGTH_SHORT).show()
 //                    startActivity(Intent(this, MainActivity2::class.java))
-
                     mainFrags = homeFrag()
                     supportFragmentManager
                         .beginTransaction()
@@ -50,8 +44,8 @@ class MainActivity : AppCompatActivity() {
                         .commit()
                 }
                 R.id.itemnext -> {
-                    Toast.makeText(this, "2San", Toast.LENGTH_SHORT).show()
-                    storyFrags = fragForStory()
+//                    Toast.makeText(this, "2San", Toast.LENGTH_SHORT).show()
+                    storyFrags = FragForStory()
                     supportFragmentManager
                         .beginTransaction()
                         .replace(R.id.frame_layout, storyFrags)
@@ -61,6 +55,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
     }
 
 
