@@ -5,7 +5,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 
-@Database (entities = [Stuff::class], version = 1, exportSchema = false)
+@Database (entities = [Stuff::class, Notices::class], version = 3, exportSchema = false)
 abstract class MainDb : RoomDatabase() {
     abstract fun getDao(): Dao
 
@@ -27,7 +27,8 @@ abstract class MainDb : RoomDatabase() {
                     MainDb::class.java,
                     "Cipo.db"
 
-                ).build()
+                )   .fallbackToDestructiveMigration()
+                    .build()
                 INSTANCE = instance
                 return instance
             }

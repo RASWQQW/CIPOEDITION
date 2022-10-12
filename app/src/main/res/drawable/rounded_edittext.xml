@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--the outline box turns to green when the edit text is in focus-->
+<item android:state_enabled="true" android:state_focused="true">
+    <shape android:shape="rectangle">
+        <solid android:color="#222222" />
+        <stroke android:width="2dp" android:color="#81FF0000" />
+    </shape>
+</item>
+
+<!--the outline box turns to grey when the edit text is out of focus-->
+<item android:state_enabled="true">
+    <shape android:shape="rectangle">
+        <solid android:color="#454C4B" />
+        <stroke android:width="2dp" android:color="#2E2E2E" />
+        <corners
+            android:bottomLeftRadius="5dp"
+            android:bottomRightRadius="5dp"
+            android:topLeftRadius="5dp"
+            android:topRightRadius="5dp" />
+    </shape>
+</item>
+
+</selector>

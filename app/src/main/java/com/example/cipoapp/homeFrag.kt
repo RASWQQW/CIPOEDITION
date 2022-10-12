@@ -3,6 +3,7 @@ package com.example.cipoapp
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context.CLIPBOARD_SERVICE
+import android.content.res.Configuration
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -12,13 +13,17 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.annotation.RequiresApi
+import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
 import com.example.cipoapp.data.Stuff
 import com.example.cipoapp.data.StuffViewModel
 import com.example.cipoapp.data.listeners.CustomListeners
 import com.example.cipoapp.databinding.FragmentFragForStoryBinding
+import com.example.cipoapp.fragments.list.StuffAdapters
 import com.example.cipoapp.others.SendShortUrl
+import java.lang.Exception
+import java.util.*
 
 
 class homeFrag : Fragment(), CustomListeners {
@@ -55,30 +60,47 @@ class homeFrag : Fragment(), CustomListeners {
             val label3 = binding.checkBoxc3
             val lengthText = binding.crew3
 
+            lengthText.isVisible = true; binding.imageView4.isVisible = true
+            lengthText.text = printerelem.length.toString()
+
             stuffSaver = ViewModelProvider(this)[StuffViewModel::class.java]
 
-            lengthText.isVisible = true; binding.imageView4.isVisible = true
-
-            lengthText.text = printerelem.length.toString()
-            Log.d("Split", printerelem.split("/")[2].toString())
-
-            if (printerelem.split("/")[2] != "tinyurl.com"){
+            fun runGetLinks(){
                 SendShortUrl(printerelem, label2, label3, stuffSaver).execute()
                 Toast.makeText(activity, "Success", Toast.LENGTH_SHORT).show()
             }
-            else{
-                binding.errorViewText.text = "Error, same link as tinyurl"
-                binding.errorViewText.isVisible = true
+
+            val splitEdElem = printerelem.split("/")
+
+            try{
+                if(splitEdElem.size >= 2){
+                    if (splitEdElem[2] == "tinyurl.com"){
+                        binding.errorViewText.text = "Error, same link as tinyurl"
+                        binding.errorViewText.isVisible = true
+                        binding.iconAnimate.isVisible = true }
+
+                    else{ runGetLinks() }
+                    binding.errorViewText.isGone = true
+                    binding.iconAnimate.isGone = true  }
+
+                else if(printerelem.length < 10){
+                    binding.errorViewText.text = "Text too short"
+                    binding.errorViewText.isVisible = true
+                    binding.iconAnimate.isVisible = true }
+
+                else{ runGetLinks();
+                    binding.errorViewText.isGone = true
+                    binding.iconAnimate.isGone = true  }
+
             }
+            catch (e: Exception){
+                binding.errorViewText.text = e.toString()
+                binding.errorViewText.isGone = true
+                binding.iconAnimate.isGone = true
 
-
-
-//            sleep to save needed text
-//            Thread.sleep(5_000)
+            }
         }
-
     }
-
 
     override fun onUpdate(stuff: Stuff, position: Int) {
 //        TODO("Not yet implemented")

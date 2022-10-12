@@ -5,10 +5,12 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.cancelAndJoin
 import kotlinx.coroutines.launch
 
 class StuffViewModel(application: Application): AndroidViewModel(application){
 
+    val getCountView: LiveData<List<Notices>>
     val getAllData: LiveData<List<Stuff>>
     private  val repository: UserRepository
 
@@ -16,6 +18,7 @@ class StuffViewModel(application: Application): AndroidViewModel(application){
         val stuffDao = MainDb.getDb(application).getDao()
         repository = UserRepository(stuffDao)
         getAllData = repository.insertItem
+        getCountView = repository.getCountForRep
     }
 
     fun deleteStuff(stuff: Stuff){
@@ -28,13 +31,25 @@ class StuffViewModel(application: Application): AndroidViewModel(application){
         viewModelScope.launch(Dispatchers.IO){
             repository.insertForRep(stuff)
         }
-
     }
 
-    fun getStuffs(){
+    fun insertNoticeView(notices: Notices){
         viewModelScope.launch(Dispatchers.IO){
-            repository.getStuffs()
+            repository.insertNoticeForRep(notices)
         }
     }
 
+    fun updateNotice(){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.updateNoticeForRep()
+        }
+
+
+    }
+
+    fun getCountView(){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.getCountForRep()
+        }
+    }
 }

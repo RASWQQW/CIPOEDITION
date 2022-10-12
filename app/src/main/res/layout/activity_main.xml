@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:layout_x="540dp"
-    android:layout_y="540dp"
+    android:layout_x="@dimen/_540sdp"
+    android:layout_y="@dimen/_540sdp"
     android:background="#000000"
     android:backgroundTint="#232323"
     android:backgroundTintMode="add"
@@ -14,8 +15,8 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bgNew34"
-        android:layout_width="413dp"
-        android:layout_height="53dp"
+        android:layout_width="@dimen/_413sdp"
+        android:layout_height="@dimen/_40sdp"
         android:background="#1F1F25"
         android:visibility="visible"
         app:itemRippleColor="#424242"
@@ -29,13 +30,13 @@
 
     <TextView
         android:id="@+id/MainLable2"
-        android:layout_width="357dp"
-        android:layout_height="55dp"
+        android:layout_width="@dimen/_357sdp"
+        android:layout_height="@dimen/_55sdp"
         android:fontFamily="sans-serif-light"
         android:text="Url Shorner forever!"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="35sp"
+        android:textSize="@dimen/_35sdp"
         android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,8 +55,8 @@
         android:hapticFeedbackEnabled="true"
         android:layerType="software"
         android:longClickable="true"
-        android:minWidth="48dp"
-        android:minHeight="48dp"
+        android:minWidth="@dimen/_48sdp"
+        android:minHeight="@dimen/_48sdp"
         android:shadowColor="#2D2F9E"
         android:shadowDx="15"
         android:shadowDy="15"
@@ -100,8 +101,8 @@
         android:id="@+id/SetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_45sdp"
         android:text="Short"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -181,8 +182,8 @@
 
     <FrameLayout
         android:id="@+id/frame_layout"
-        android:layout_width="414dp"
-        android:layout_height="734dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:layout_marginTop="2dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -191,6 +192,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/CountMean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="69dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

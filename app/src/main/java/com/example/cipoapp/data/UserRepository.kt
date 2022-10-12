@@ -6,6 +6,7 @@ import kotlinx.coroutines.flow.Flow
 
 class UserRepository(private val dao: Dao){
     val insertItem: LiveData<List<Stuff>> = dao.getStuffs()
+    val getCountForRep: LiveData<List<Notices>> = dao.getCount()
 
     suspend fun insertForRep(stuff: Stuff){
         dao.insertItem(stuff)
@@ -15,8 +16,15 @@ class UserRepository(private val dao: Dao){
         dao.deleteStuff(stuff)
     }
 
-    suspend fun getStuffs(){
-        dao.getStuffs()
+    suspend fun insertNoticeForRep(notices: Notices){
+        dao.insertNotice(notices)
+    }
+    suspend fun updateNoticeForRep(){
+        dao.updateNotice()
+    }
+
+    suspend fun getCountForRep(){
+        dao.getCount()
     }
 
 }

@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Cipo</string>
-    <string name="set_you_image">Set you image</string>
+    <string name="app_name">CIPO</string>
+    <string name="set_you_image">Set your image</string>
     <string name="copy">Copy</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -8,5 +8,7 @@
     <string name="date">Date</string>
     <string name="id">Id</string>
     <string name="links">Links</string>
+    <string name="notif_id">1212</string>
+    <string name="notif_title">Hello</string>
 
 </resources>

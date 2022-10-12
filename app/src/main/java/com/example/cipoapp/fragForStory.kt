@@ -45,6 +45,12 @@ class FragForStory : Fragment() {
             adapter.setData(user)
         })
 
+        fun displayAmount(){
+            stuffModel.getAllData.observe(viewLifecycleOwner, Observer{
+                binding.Textters3.text = "Story amount: ${it.size}"
+            })
+        }
+        displayAmount()
 
         adapter.setActionDelete{
             Toast.makeText(activity, "Clicked", Toast.LENGTH_SHORT).show()
@@ -66,7 +72,7 @@ class FragForStory : Fragment() {
                 }
 
                 builder.create().show()
-    }
+        }
 
         return binding.root
     }
